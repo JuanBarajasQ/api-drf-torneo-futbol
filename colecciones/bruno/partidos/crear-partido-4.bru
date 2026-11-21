@@ -1,0 +1,21 @@
+meta {
+  name: Crear Partido 4
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base}}/api/partidos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "local": 2,
+    "visitante": 3,
+    "fecha": "2026-12-08T16:00:00Z",
+    "estadio": "Alfonso López"
+  }
+}
+

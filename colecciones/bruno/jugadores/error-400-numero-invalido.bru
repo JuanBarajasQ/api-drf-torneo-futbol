@@ -1,0 +1,21 @@
+meta {
+  name: Error 400 - Camiseta fuera de rango (100)
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Jugador Invalido",
+    "numero": 100,
+    "posicion": "delantero",
+    "equipo": 1
+  }
+}
+

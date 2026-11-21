@@ -1,0 +1,19 @@
+meta {
+  name: Crear Equipo 4 - Atletico Nacional
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base}}/api/equipos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Atlético Nacional",
+    "ciudad": "Medellín"
+  }
+}
+

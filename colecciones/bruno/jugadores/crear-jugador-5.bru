@@ -1,0 +1,21 @@
+meta {
+  name: Crear Jugador 5 - Delantero 2
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Radamel Falcao",
+    "numero": 9,
+    "posicion": "delantero",
+    "equipo": 3
+  }
+}
+

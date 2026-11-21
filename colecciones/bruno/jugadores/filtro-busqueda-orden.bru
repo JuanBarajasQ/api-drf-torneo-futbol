@@ -1,0 +1,18 @@
+meta {
+  name: Filtro, Busqueda y Orden en Jugadores
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{base}}/api/jugadores/?posicion=delantero&search=Carlos&ordering=-numero
+  body: none
+  auth: none
+}
+
+params:query {
+  posicion: delantero
+  search: Carlos
+  ordering: -numero
+}
+

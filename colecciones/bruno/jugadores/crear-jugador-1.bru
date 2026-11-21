@@ -1,0 +1,21 @@
+meta {
+  name: Crear Jugador 1 - Portero
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Ezequiel Mastrolía",
+    "numero": 1,
+    "posicion": "portero",
+    "equipo": 1
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "version": "1",
+  "name": "Torneo de Fútbol API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
+

@@ -1,0 +1,21 @@
+meta {
+  name: Crear Jugador 2 - Defensa
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Hernán Pertuz",
+    "numero": 2,
+    "posicion": "defensa",
+    "equipo": 1
+  }
+}
+

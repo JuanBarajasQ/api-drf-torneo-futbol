@@ -1,0 +1,21 @@
+meta {
+  name: Crear Jugador 4 - Delantero
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Carlos Bacca",
+    "numero": 70,
+    "posicion": "delantero",
+    "equipo": 5
+  }
+}
+

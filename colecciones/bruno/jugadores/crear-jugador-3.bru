@@ -1,0 +1,21 @@
+meta {
+  name: Crear Jugador 3 - Medio
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Lucas Ríos",
+    "numero": 10,
+    "posicion": "medio",
+    "equipo": 1
+  }
+}
+

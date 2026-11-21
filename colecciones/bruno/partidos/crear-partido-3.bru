@@ -1,0 +1,21 @@
+meta {
+  name: Crear Partido 3
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base}}/api/partidos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "local": 5,
+    "visitante": 1,
+    "fecha": "2026-12-05T20:00:00Z",
+    "estadio": "Metropolitano"
+  }
+}
+

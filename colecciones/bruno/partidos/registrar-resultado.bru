@@ -1,0 +1,19 @@
+meta {
+  name: Accion - Registrar Resultado
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{base}}/api/partidos/1/registrar-resultado/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "goles_local": 2,
+    "goles_visitante": 1
+  }
+}
+

@@ -1,0 +1,21 @@
+meta {
+  name: Error 400 - Mismo numero en mismo equipo
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{base}}/api/jugadores/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Otro Portero",
+    "numero": 1,
+    "posicion": "portero",
+    "equipo": 1
+  }
+}
+

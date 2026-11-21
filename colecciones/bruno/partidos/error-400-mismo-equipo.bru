@@ -1,0 +1,21 @@
+meta {
+  name: Error 400 - Equipo contra si mismo
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{base}}/api/partidos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "local": 1,
+    "visitante": 1,
+    "fecha": "2026-12-15T19:00:00Z",
+    "estadio": "General Santander"
+  }
+}
+

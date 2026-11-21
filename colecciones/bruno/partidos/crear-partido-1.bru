@@ -1,0 +1,21 @@
+meta {
+  name: Crear Partido 1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base}}/api/partidos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "local": 1,
+    "visitante": 2,
+    "fecha": "2026-12-01T15:30:00Z",
+    "estadio": "General Santander"
+  }
+}
+

@@ -1,0 +1,21 @@
+meta {
+  name: Crear Partido 2
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base}}/api/partidos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "local": 3,
+    "visitante": 4,
+    "fecha": "2026-12-02T18:00:00Z",
+    "estadio": "El Campín"
+  }
+}
+
