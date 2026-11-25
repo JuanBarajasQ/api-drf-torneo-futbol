@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "django_filters",
     "drf_spectacular",
     # Tus apps: agrégalas aquí
+    'torneo',
 ]
 
 MIDDLEWARE = [
@@ -140,9 +141,17 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # ----------------------------------------------------------------------
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 10,
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+        "rest_framework.filters.SearchFilter",
+        "rest_framework.filters.OrderingFilter",
+    ],
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "API del grupo",  # cámbialo por el nombre de tu proyecto
+    "TITLE": "API Torneo de Fútbol",
+    "DESCRIPTION": "API REST para la gestión de equipos, jugadores y partidos",
     "VERSION": "1.0.0",
 }
